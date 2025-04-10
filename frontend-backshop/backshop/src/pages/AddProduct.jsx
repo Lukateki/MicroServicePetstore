@@ -27,7 +27,7 @@ function AddProduct() {
 
         try {
             // Step 1: Create product
-            const response = await fetch('https://microservicepetstore-1.onrender.com:5001/products', {
+            const response = await fetch('https://microservicepetstore-1.onrender.com/products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ function AddProduct() {
             const product = await response.json(); // ✅ Get product _id
 
             // Step 2: Create inventory with 0 quantity
-            const inventoryRes = await fetch('https://microservicepetstore-2.onrender.com:5003/inventory', {
+            const inventoryRes = await fetch('https://microservicepetstore-2.onrender.com/inventory', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ function ProductList() {
 
   useEffect(() => {
     // Fetch products from the Product microservice
-    fetch("https://microservicepetstore-1.onrender.com:5001/products")
+    fetch("https://microservicepetstore-1.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error("Error loading products:", err))

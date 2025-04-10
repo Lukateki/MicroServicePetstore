@@ -17,7 +17,7 @@ function Products() {
             try {
                 const token = localStorage.getItem("token"); // 👈 Get the saved token
 
-                const res = await fetch('https://microservicepetstore-2.onrender.com:5003/inventory', {
+                const res = await fetch('https://microservicepetstore-2.onrender.com/inventory', {
                     headers: {
                         'Authorization': `Bearer ${token}` // 👈 Add this header
                     }

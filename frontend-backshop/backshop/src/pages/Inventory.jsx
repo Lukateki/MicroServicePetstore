@@ -8,10 +8,10 @@ function Inventory() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const productRes = await fetch('https://microservicepetstore-1.onrender.com:5001/products');
+                const productRes = await fetch('https://microservicepetstore-1.onrender.com/products');
                 const productData = await productRes.json();
 
-                const inventoryRes = await fetch('https://microservicepetstore-2.onrender.com:5003/inventory', {
+                const inventoryRes = await fetch('https://microservicepetstore-2.onrender.com/inventory', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}` // assuming token is stored
                     }
