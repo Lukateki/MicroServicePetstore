@@ -30,7 +30,7 @@ function Users() {
         }
 
         try {
-            const endpoint = isRegister ? "http://localhost:5004/auth/register" : "http://localhost:5004/auth/login";
+            const endpoint = isRegister ? "https://microservicepetstore.onrender.com:5004/auth/register" : "https://microservicepetstore.onrender.com:5004/auth/login";
 
             const body = isRegister? { 
                 name: formData.name,

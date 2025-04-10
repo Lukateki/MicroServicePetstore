@@ -6,7 +6,7 @@ function Products() {
     const [quantities, setQuantities] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5001/products')
+        fetch('https://microservicepetstore-1.onrender.com/products')
             .then((res) => res.json())
             .then((data) => setProducts(data))
             .catch((err) => console.error('Error fetching products:', err));
@@ -17,7 +17,7 @@ function Products() {
             try {
                 const token = localStorage.getItem("token"); // 👈 Get the saved token
 
-                const res = await fetch('http://localhost:5003/inventory', {
+                const res = await fetch('https://microservicepetstore-2.onrender.com:5003/inventory', {
                     headers: {
                         'Authorization': `Bearer ${token}` // 👈 Add this header
                     }

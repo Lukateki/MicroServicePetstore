@@ -9,7 +9,7 @@ function ProductList() {
 
   useEffect(() => {
     // Fetch products from the Product microservice
-    fetch("http://localhost:5001/products")
+    fetch("https://microservicepetstore-1.onrender.com:5001/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error("Error loading products:", err))
@@ -23,7 +23,7 @@ function ProductList() {
         placeholder="Search products..."
         onChange={(e) => {
           const query = e.target.value
-          fetch(`http://localhost:5001/products?search=${query}`)
+          fetch(`https://microservicepetstore-1.onrender.com/products?search=${query}`)
             .then((res) => res.json())
             .then((data) => setProducts(data))
         }}

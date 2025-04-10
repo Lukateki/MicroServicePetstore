@@ -8,10 +8,10 @@ function Inventory() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const productRes = await fetch('http://localhost:5001/products');
+                const productRes = await fetch('https://microservicepetstore-1.onrender.com:5001/products');
                 const productData = await productRes.json();
 
-                const inventoryRes = await fetch('http://localhost:5003/inventory', {
+                const inventoryRes = await fetch('https://microservicepetstore-2.onrender.com:5003/inventory', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}` // assuming token is stored
                     }
@@ -49,7 +49,7 @@ function Inventory() {
             const token = localStorage.getItem('token');
 
             // Update inventory-service
-            await fetch(`http://localhost:5003/inventory/${productId}`, {
+            await fetch(`https://microservicepetstore-2.onrender.com/inventory/${productId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ function Inventory() {
             });
 
             // Also update product-service stock (optional for display)
-            await fetch(`http://localhost:5001/products/${productId}`, {
+            await fetch(`https://microservicepetstore-1.onrender.com/products/${productId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
