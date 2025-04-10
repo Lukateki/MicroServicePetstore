@@ -17,7 +17,7 @@ A microservices-based pet store system where users can:
 | Fadi Nimer                 | 40183225   |
 | Kevin Theam                | -          |
 | Samy Arab                  | -          |
-| Thaneekan Thankarajah      | -          |
+| Thaneekan Thankarajah      | 40192306   |
 
 ## ⚠️ Important Notice
 
