@@ -10,6 +10,15 @@ A microservices-based pet store system where users can:
 - Register/login as clients or admins
 - Manage orders and products (admin side)
 
+## 👥 Contributors
+
+| Name                      | Student ID |
+|:---------------------------|:-----------|
+| Fadi Nimer                 | 40183225   |
+| Kevin Theam                | -          |
+| Samy Arab                  | -          |
+| Thaneekan Thankarajah      | -          |
+
 ## ⚠️ Important Notice
 
 This project is **partially implemented** for academic purposes.
