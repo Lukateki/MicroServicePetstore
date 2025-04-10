@@ -70,7 +70,6 @@ function AddProduct() {
 
             // ✅ Done
             alert('✅ Product and inventory created successfully!');
-            window.location.href = '/products';
 
             // Reset form
             setFormData({

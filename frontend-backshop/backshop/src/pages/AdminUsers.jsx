@@ -13,7 +13,7 @@ function AdminUsers() {
       }
 
       try {
-        const res = await fetch("https://microservicepetstore.onrender.com:5004/users", {
+        const res = await fetch("https://microservicepetstore.onrender.com/users", {
           headers: {
             "Authorization": `Bearer ${token}`
           }
