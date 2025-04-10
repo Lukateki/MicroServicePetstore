@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <header class="row">
+        <div class="col-12 bg-primary text-white text-center p-3">
+            <h2>Backstore Management</h2>
+        </div>
+    </header>
+
+    <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" onclick="expandSubmenu(event)">
+                            Products
+                        </a>
+                        <ul class="nav flex-column collapse ml-3" id="productsSubmenu">
+                            <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Purchase Orders</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Transfers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item"><a class="nav-link" href="customers.html">Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">Content</a></li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#financeSubmenu" role="button" aria-expanded="false" aria-controls="financeSubmenu">
+                            Finance
+                        </a>
+                        <ul class="nav flex-column collapse ml-3" id="financeSubmenu">
+                            <li class="nav-item"><a class="nav-link" href="#">Plan Payment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Payouts</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Discounts</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="mb-0">Order List</h1>
+            </div>
+            
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Order</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Total ($)</th>
+                        <th scope="col">Payment Status</th>
+                        <th scope="col">Fulfillment Status</th>
+                        <th scope="col">Items</th>
+                        <th scope="col">Delivery Status</th>
+                        <th scope="col">Delivery Method</th>
+                        <th scope="col">Tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1001</td>
+                        <td>2024-03-01</td>
+                        <td>Liam Nguyen</td>
+                        <td>89.99</td>
+                        <td>Paid</td>
+                        <td>Fulfilled</td>
+                        <td>Dog Leash, Treats</td>
+                        <td>Delivered</td>
+                        <td>Shipping</td>
+                        <td>New, Returning</td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>2024-03-02</td>
+                        <td>Sophia Kim</td>
+                        <td>29.50</td>
+                        <td>Refunded</td>
+                        <td>Unfulfilled</td>
+                        <td>Cat Toy</td>
+                        <td>Pending</td>
+                        <td>Shipping</td>
+                        <td>High Priority</td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td>2024-03-03</td>
+                        <td>Ethan Ali</td>
+                        <td>119.00</td>
+                        <td>Paid</td>
+                        <td>Fulfilled</td>
+                        <td>Pet Bed</td>
+                        <td>Shipped</td>
+                        <td>Shipping</td>
+                        <td>Bulk</td>
+                    </tr>
+                    <tr>
+                        <td>#1004</td>
+                        <td>2024-03-04</td>
+                        <td>Maya Patel</td>
+                        <td>0.00</td>
+                        <td>Paid</td>
+                        <td>Unfulfilled</td>
+                        <td>Online Advice</td>
+                        <td>Not applicable</td>
+                        <td>Shipping not required</td>
+                        <td>Service</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+</table>
+
+            
+        </main>
+    </div>
+
+    <footer class="row">
+        <div class="col-12 bg-dark text-white text-center p-3">
+            <p>Inventory System © 2024. All Rights Reserved.</p>
+            <a href="privacy.html" class="text-white">Privacy/Disclaimer Statement</a>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

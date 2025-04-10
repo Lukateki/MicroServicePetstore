@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <header class="row">
+        <div class="col-12 bg-primary text-white text-center p-3">
+            <h2>Backstore Management</h2>
+        </div>
+    </header>
+
+    <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" onclick="expandSubmenu(event)">
+                            Products
+                        </a>
+                        <ul class="nav flex-column collapse ml-3" id="productsSubmenu">
+                            <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Purchase Orders</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Transfers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item"><a class="nav-link" href="customers.html">Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">Content</a></li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#financeSubmenu" role="button" aria-expanded="false" aria-controls="financeSubmenu">
+                            Finance
+                        </a>
+                        <ul class="nav flex-column collapse ml-3" id="financeSubmenu">
+                            <li class="nav-item"><a class="nav-link" href="#">Plan Payment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Payouts</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Discounts</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="mb-0">Product List</h1>
+                <a href="addproduct.html" class="btn btn-primary">Add Product</a>
+            </div>
+            
+   <table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Inventory</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Vendor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bella</td>
+            <td>1</td>
+            <td>Cat</td>
+            <td>Playful, great with kids, fully vaccinated</td>
+            <td>Adopt A-Cat/Dog Org</td>
+        </tr>
+        <tr>
+            <td>Whiskers</td>
+            <td>1</td>
+            <td>Cat</td>
+            <td>Calm, loves cuddles, litter trained</td>
+            <td>Adopt A-Cat/Dog Org</td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td>1</td>
+            <td>Dog</td>
+            <td>Energetic, good for active families, house trained</td>
+            <td>Adopt A-Cat/Dog Org</td>
+        </tr>
+        <tr>
+            <td>Luna</td>
+            <td>1</td>
+            <td>Dog</td>
+            <td>Quiet, loves sunbathing, neutered</td>
+            <td>Adopt A-Cat/Dog Org</td>
+        </tr>
+    </tbody>
+</table>
+
+            
+        </main>
+    </div>
+
+    <footer class="row">
+        <div class="col-12 bg-dark text-white text-center p-3">
+            <p>Inventory System © 2024. All Rights Reserved.</p>
+            <a href="privacy.html" class="text-white">Privacy/Disclaimer Statement</a>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

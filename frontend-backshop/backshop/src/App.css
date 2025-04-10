@@ -1,0 +1,32 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+main {
+  background-color: #ffffff;
+  flex: 1;
+  padding: 2rem;
+}
